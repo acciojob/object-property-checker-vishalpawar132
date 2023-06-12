@@ -1,12 +1,9 @@
 const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
-  if (hasKey === key) {
-  	return true;
-  } else {
-  	return false;
-  }
+  return Object.prototype.hasOwnProperty.call(sampleObject, key);
 }
+
 
 // Do not change the code below
 const key = prompt("Enter Key.");
